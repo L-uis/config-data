@@ -28,3 +28,17 @@ springdoc:
     tags-sorter: alpha
     operations-sorter: method
     doc-expansion: none
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "health,info,metrics,loggers,threaddump,heapdump"
+
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: false
