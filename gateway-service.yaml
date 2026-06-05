@@ -21,6 +21,12 @@ spring:
                 - Path=/product/**
               filters:
                 - StripPrefix=1
+            - id: cart-service
+              uri: lb://cart-service
+              predicates:
+                - Path=/cart-item/**
+              filters:
+                - StripPrefix=1
 
 eureka:
   client:
