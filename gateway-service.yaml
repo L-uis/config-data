@@ -33,7 +33,6 @@ spring:
                 - Path=/invoice-service/**
               filters:
                - StripPrefix=1
-				
 eureka:
   client:
     register-with-eureka: true
