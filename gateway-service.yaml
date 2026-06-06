@@ -53,3 +53,15 @@ management:
     web:
       exposure:
         include: "health,info,metrics,loggers,threaddump,heapdump,gateway"
+
+springdoc:
+  swagger-ui:
+    urls:
+      - name: API Auth
+        url: /auth-service/v3/api-docs
+      - name: API Product
+        url: /product-service/v3/api-docs
+      - name: API Cart Service
+        url: /cart-service/v3/api-docs
+      - name: API Invoice
+        url: /invoice-service/v3/api-docs
